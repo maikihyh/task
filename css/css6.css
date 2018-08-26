@@ -51,6 +51,7 @@ font-size: 30px;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
+
 }
 
 .rim2{
@@ -71,7 +72,6 @@ font-size: 30px;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
-
 }
 .word {
     display: flex;
@@ -150,13 +150,23 @@ display: flex;
     padding-right: 120px;
     align-items: center;
     position: relative;
+
 }
-.two{
+.two {
     font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 28%;
 }
+
 .three{
     font-size: 30px;
     color: #ec7d6b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 14%;
 }
 .four{
     width: 20px;
@@ -210,4 +220,7 @@ display: flex;
     width: 50px;
     text-align: center;
     margin-top: 20px;
+}
+.margin{
+height: 100px;
 }
