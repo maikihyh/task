@@ -6,17 +6,19 @@ body{
     background: #68cdd5;
   line-height:100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between ;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 9;
+    align-items: center;
 }
 .pix{
-    position: absolute;
-    right: 40px;
-    top: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
+
 .box2{
     line-height:80px;
     width: 350px;
@@ -158,16 +160,14 @@ display: flex;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 28%;
+    width: 36%;
 }
 
 .three{
     font-size: 30px;
     color: #ec7d6b;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 14%;
+
 }
 .four{
     width: 20px;
