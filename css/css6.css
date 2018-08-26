@@ -51,7 +51,7 @@ font-size: 30px;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
-
+background-color: white;
 }
 
 .rim2{
@@ -62,7 +62,7 @@ font-size: 30px;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
-
+    background-color: white;
 }
 .rim3{
     border: none;
@@ -72,6 +72,7 @@ font-size: 30px;
     appearance:none;
     -moz-appearance:none;
     -webkit-appearance:none;
+    background-color: white;
 }
 .word {
     display: flex;
