@@ -13,9 +13,7 @@ body{
     z-index: 9;
     align-items: center;
 }
-.pix{
-    display: flex;
-    align-items: center;
+.box1 img {
     margin-right: 20px;
 }
 
@@ -167,7 +165,6 @@ display: flex;
     font-size: 30px;
     color: #ec7d6b;
     overflow: hidden;
-
 }
 .four{
     width: 20px;
