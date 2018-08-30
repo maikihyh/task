@@ -108,13 +108,13 @@ color: white;
 }
 .shop{
     border: 5px solid white;
-   width: 140px;
-    height: 140px;
+   width: 25vw;
+    height: 25vw;
     background-color: #f5c97b;
 }
 .shop p{
-    width: 140px;
-   line-height: 100px;
+    width: 25vw;
+   line-height: 17vw;
     text-align: center;
     margin: 0;
 }
@@ -122,8 +122,8 @@ color: white;
     opacity:1;
 }
 .msg{
-    width:140px;
-   line-height: 40px;
+    width:25vw;
+   line-height: 8vw;
     background-color: #83b09a;
     text-align: center;
     color: white;
@@ -135,10 +135,11 @@ color: white;
 }
 .banner{
     background:url(../img/task7.png) no-repeat;
-height: 50px;
-    width: 140px;
-  margin: 6px;
+height: 10vw;
+    width:21vw;
     opacity:0;
+    margin: 2vw;
+  background-size: 20vw;
 }
 .icon1 {height:30px;width:30px;background-position: -35px 0;}
 .icon2{height:30px;width:30px;background-position: 0 0;}
