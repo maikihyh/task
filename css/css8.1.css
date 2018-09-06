@@ -58,23 +58,33 @@ body{
   text-align: center;
     padding: 80px 40px 40px 40px;
     height: 422px;
+    color: white;
     background-color:rgba(61,61,61,1);
     /*animation:gogogo 2s infinite linear ;*/
     display: none;
     -webkit-animation:gogogo 2s; /* Safari and Chrome */
 }
+.engineer h4{
+    color: white;
+}
 @-webkit-keyframes gogogo{
-    0%   {background:red; left:0px; top:0px;}
-    25%  {background:yellow; left:10px; top:0px; }
-    50%  {background:blue; left:20px; top:20px;)}
-    75%  {background:green; left:0px; top:10px;}
-    100% {background:red; left:0px; top:0px;}
+    /*0%   {background:red; left:0px; top:0px;}*/
+    /*25%  {background:yellow; left:10px; top:0px; }*/
+    /*50%  {background:blue; left:20px; top:20px;)}*/
+    /*75%  {background:green; left:0px; top:10px;}*/
+    /*100% {background:red; left:0px; top:0px;}*/
     from {-webkit-transform: rotateY(0deg);}
-    to {-webkit-transform: rotateY(360deg);}
+    to {-webkit-transform: rotateY(720deg);}
 }
 .now :hover .engineer{
 display: block;
 }
+@media screen and (max-width:400px){
+    .gird-one img{
+       width: 100%;
+    }
+}
+
 
 .number-n{
     color: #f4716b;
@@ -83,7 +93,6 @@ display: block;
     float: right;
 }
 .wrapper p{
-    color: black;
     margin: 0;
 }
 .gird-one{

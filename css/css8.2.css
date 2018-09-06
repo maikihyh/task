@@ -24,6 +24,7 @@ padding-bottom: 20px;
 .ordered-list-box{
     border: 1px solid #e6e6e6;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .video{
     display: inline-block;
@@ -53,6 +54,11 @@ display: flex;
   float: left;
     margin: 20px;
 }
+@media screen and (max-width:400px){
+    .to-potato-net img{
+        width:240px;
+    }
+}
 .to-potato-net p{
   padding: 40px;
 }
@@ -62,4 +68,5 @@ display: flex;
 .todou-box{
     border: 1px solid #e6e6e6;
     margin-bottom: 40px;
+    margin-right: 20px;
 }

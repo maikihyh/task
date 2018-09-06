@@ -52,6 +52,7 @@ body{
 }
 .navbar-default .navbar-nav>li:hover{
     border-bottom: 2px solid white;
+    color: white;
 }
 .navbar-default .navbar-nav>li>a:hover{
     color:white;
@@ -142,8 +143,10 @@ border-radius:50%;
     width: 20%;
     }
 }
-.img-photograph img{
-    max-width: 200px;
+@media screen and (max-width:1100px){
+    .img-photograph{
+        width: 100%;
+    }
 }
 .photograph:hover{
     border: 1px solid #919091;
@@ -178,6 +181,8 @@ footer{
 .root{
 text-align: center;
     margin:0;
+    width: 100%;
+    border-top: 1px solid #fff;
 }
 .tail-like{
     margin: 50px 0;
