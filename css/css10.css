@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.top{
+    text-align: center;
+    background-color: #1d7ad9;
+    color: white;
+}
+.login{
+   float: right;
+  padding: 10px 20px 10px 20px;
+    line-height: 30px;
+    margin-right: 30px;
+}
+.login:hover{
+    background-color: white;
+    color: black;
+}
+.number{
+    float: left;
+    line-height: 50px;
+}
+.navbar-nav{
+    text-align: center;
+    border: 0;
+}
+@media screen and (min-width: 768px) {
+    .navbar-nav{
+        float: right;
+    }
+}
+.navbar-default{
+    background-color: white;
+    border: 0;
+}
+.navbar-default .navbar-nav>li>a{
+    padding: 10px 20px 10px 20px;
+   border: 1px solid #cccccc;
+    margin: 20px;
+    color: black;
+    border-radius: 5px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    background-color: #1d7ad9;
+    color: white;
+}
