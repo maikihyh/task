@@ -110,7 +110,7 @@ body{
 background-color: #f3f3f3;
 }
 .single-choice-style{
-    padding-left: 30px;
+    padding-left: 10px;
     margin-top: 20px;
     text-align: center;
 }
@@ -146,7 +146,7 @@ input[type="radio"] {
     -moz-appearance:none;
     -webkit-appearance:none;
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1000px){
     .one{
         position: relative;
         top: 50%;
@@ -156,9 +156,9 @@ input[type="radio"] {
 .all-eyes{
     text-align: center;
     margin-top:10px ;
-    margin-left: 40px;
+    margin-left: 10px;
 }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1000px) {
     .all-eyes{
         float: right;
     }
@@ -173,7 +173,7 @@ input[type="radio"] {
 .long{
     text-align: center;
     margin-top: 20px;
- margin-left: 30px;
+ margin-left: 10px;
 }
 .option{
     padding-bottom: 40px;
