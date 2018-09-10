@@ -140,7 +140,6 @@ border-radius:50%;
     text-align: center;
     line-height: 200px;
     border: 1px solid #fff;
-    box-shadow: 1px 1px 1px  1px #888888;
 }
 @media screen and (min-width:1200px){
     .img-photograph{

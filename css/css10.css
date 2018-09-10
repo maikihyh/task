@@ -40,7 +40,7 @@ body{
 .navbar-default .navbar-nav>li>a{
     padding: 10px 20px 10px 20px;
    border: 1px solid #cccccc;
-    margin: 20px;
+   margin:10px 0 10px 10px;
     color: black;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #d1d2d4;
@@ -204,8 +204,8 @@ input[type="radio"] {
 
 }
 .tail-like{
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .tail:hover{
     color:#1d7ad9 ;
@@ -213,4 +213,9 @@ input[type="radio"] {
 }
 .carton-box{
     border: 1px solid #cccccc;
+}
+@media screen and (max-width: 1000px)  {
+    .two{
+        width: 100%;
+    }
 }
