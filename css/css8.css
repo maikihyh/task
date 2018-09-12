@@ -62,23 +62,22 @@ body{
     text-align: center;
     margin-top: 50px;
 }
+.the-box{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
 .img-box{
     height: 64px;
 }
 .content-box img{
     height: 100%;
 }
-h3,h2,h4,h5{
-    color: black;
-    font-weight: bold;
-}
 .content{
     color: #999999;
 }
 .content-box-profile{
     text-align: center;
-    padding: 30px;
-    margin-top: 30px;
 }
 @media screen and (min-width: 1000px){
     .content-box-profile{
@@ -93,6 +92,9 @@ h3,h2,h4,h5{
 .learn{
     text-align: center;
     margin:30px 0px;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
 }
 .how-to-learn{
     display: flex;
@@ -165,12 +167,11 @@ border-radius:50%;
 }
 .friendship-link{
 text-align: center;
+    width: 71px;
     margin-bottom: 10px;
-}
-.frame{
     border-bottom: 1px solid #fff;
 }
-.frame:hover{
+.friendship-link:hover {
     border-bottom: 1px solid #29b078;
     cursor:pointer;
 }
