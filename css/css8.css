@@ -142,6 +142,7 @@ border-radius:50%;
     text-align: center;
     line-height: 200px;
     border: 1px solid #fff;
+    box-shadow: 1px 1px 1px 1px #fff;
 }
 @media screen and (min-width:1200px){
     .img-photograph{
@@ -154,8 +155,9 @@ border-radius:50%;
     }
 }
 .photograph:hover{
-    border: 1px solid #919091;
+    border: 1px solid #edecec;
     cursor:pointer;
+    box-shadow: 4px 4px 4px 4px #edecec;
 }
 .box-circle{
     display: inline-block;

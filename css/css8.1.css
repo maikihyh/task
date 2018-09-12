@@ -40,7 +40,12 @@ body{
     margin:0 0 50px 0;
     border-bottom:1px solid #d0d6d9;
 }
-.front-end-det-dir h4{
+.front-end-det-dir p{
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.ios-box {
     margin: 0;
     line-height: 30px;
     padding: 20px 0;
@@ -64,7 +69,7 @@ body{
     display: none;
     -webkit-animation:gogogo 2s; /* Safari and Chrome */
 }
-.engineer h4{
+.engineer p{
     color: white;
 }
 @-webkit-keyframes gogogo{
@@ -84,8 +89,21 @@ display: block;
        width: 100%;
     }
 }
-
-
+.time{
+    color: black;
+}
+.ios{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+.ios-box{
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+}
 .number-n{
     color: #f4716b;
 }
@@ -107,6 +125,7 @@ padding: 10px 0 20px 10px;
     border-top: 1px solid #d0d6d9;
     border-right: 1px solid #d0d6d9;
     word-break:break-all;
+    color: black;
 }
 .gird-three {
     line-height: 30px;
