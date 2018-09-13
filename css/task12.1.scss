@@ -48,16 +48,17 @@ body{
   }
 }
 .list-box{
-  text-align: center;
-  line-height: ($size*1) ;
+  display:flex ;
+  align-items: center;
+  height: ($size*1) ;
+  padding: 0  ($size/4);
   border-bottom: ($size/40) solid $color2;
   margin-top: $size;
 .dropdown-box{
   border: none;
   outline:none;
-  width: 26%;
   line-height: ($size*0.6);
-  margin-left: ($size/2);
+  padding-right: 37px;
   border-right: ($size/40) solid $color2;
   font-size:($font*0.8) ;
   background-image: url("../img/task6.png");
@@ -67,16 +68,14 @@ body{
   -webkit-appearance:none;
 }
   .dropdown-box-right{
-    text-align: center;
     border: none;
     outline:none;
-    width:26%;
     line-height: ($size*0.6);
-    margin-left: ($size/2);
+    padding-right: 37px;
     font-size:($font*0.8) ;
     background-image: url("../img/task6.png");
     background-repeat:no-repeat;
-    background-position:58px 5px ;
+    background-position:55px 5px ;
     color: $color3;
     -webkit-appearance:none;
   }
@@ -147,4 +146,8 @@ body{
 }
 .bug{
   margin-bottom: ($size*1.5);
+}
+.list-box-left{
+  width: 33%;
+  text-align: center;
 }
