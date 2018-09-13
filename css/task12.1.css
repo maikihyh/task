@@ -40,6 +40,7 @@ body {
 .list-box {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   height: 40px;
   padding: 0 10px;
   border-bottom: 1px solid #bebec2;
@@ -127,9 +128,5 @@ body {
 
 .bug {
   margin-bottom: 60px; }
-
-.list-box-left {
-  width: 33%;
-  text-align: center; }
 
 /*# sourceMappingURL=task12.1.css.map */

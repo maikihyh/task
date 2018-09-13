@@ -50,6 +50,7 @@ body{
 .list-box{
   display:flex ;
   align-items: center;
+  justify-content: space-around;
   height: ($size*1) ;
   padding: 0  ($size/4);
   border-bottom: ($size/40) solid $color2;
@@ -147,7 +148,4 @@ body{
 .bug{
   margin-bottom: ($size*1.5);
 }
-.list-box-left{
-  width: 33%;
-  text-align: center;
-}
+
