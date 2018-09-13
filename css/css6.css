@@ -49,8 +49,6 @@ font-size: 30px;
     outline:none;
     font-size: 30px;
     color: #a8a8a8;
-    appearance:none;
-    -moz-appearance:none;
     -webkit-appearance:none;
      background-color: white;
 }
@@ -60,8 +58,6 @@ font-size: 30px;
     outline:none;
     font-size: 30px;
     color: #a8a8a8;
-    appearance:none;
-    -moz-appearance:none;
     -webkit-appearance:none;
     background-color: white;
 }

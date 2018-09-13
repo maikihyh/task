@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   height: 40px;
+  border-bottom: 1px solid #faf9f9;
   background-color: #fff; }
   .phone .phone-img {
     width: 40px;
