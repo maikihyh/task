@@ -53,31 +53,33 @@ body{
   display:flex ;
   align-items: center;
   height: ($size*1) ;
-  padding: 0  ($size/4);
   border-bottom: ($size/40) solid $color2;
   margin-top: $size;
 .dropdown-box{
   border: none;
   outline:none;
+  width: 100%;
+  padding-left: calc(50% - 28px);
   line-height: ($size*0.6);
-  border-right: ($size/40) solid $color2;
   padding-right: 25px;
   font-size:($font*0.8) ;
   background-image: url("../img/task6.png");
   background-repeat:no-repeat;
-  background-position:52px 5px ;
+  background-position:calc(50% - -46px) 5px ;
   color: $color3;
   -webkit-appearance:none;
 }
   .dropdown-box-right{
     border: none;
     outline:none;
+    width: 100%;
+    padding-left: calc(50% - 28px);
     line-height: ($size*0.6);
     font-size:($font*0.8) ;
     padding-right: 25px;
     background-image: url("../img/task6.png");
     background-repeat:no-repeat;
-    background-position:52px 5px ;
+    background-position:calc(50% - -46px) 5px ;
     color: $color3;
     -moz-appearance:none;
     -webkit-appearance:none;
@@ -153,7 +155,12 @@ body{
   margin-bottom: ($size*1.5);
 }
 .list-box-left{
-width: 33.333%;
+  width: 33.333%;
+  text-align: center;
+  border-right: ($size/40) solid $color2;
+}
+.list-box-right{
+  width: 33.333%;
   text-align: center;
 }
 

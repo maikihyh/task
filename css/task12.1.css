@@ -43,30 +43,32 @@ body {
   display: flex;
   align-items: center;
   height: 40px;
-  padding: 0 10px;
   border-bottom: 1px solid #bebec2;
   margin-top: 40px; }
   .list-box .dropdown-box {
     border: none;
     outline: none;
+    width: 100%;
+    padding-left: calc(50% - 28px);
     line-height: 24px;
-    border-right: 1px solid #bebec2;
     padding-right: 25px;
     font-size: 0.8rem;
     background-image: url("../img/task6.png");
     background-repeat: no-repeat;
-    background-position: 52px 5px;
+    background-position: calc(50% - -46px) 5px;
     color: #a8a8a8;
     -webkit-appearance: none; }
   .list-box .dropdown-box-right {
     border: none;
     outline: none;
+    width: 100%;
+    padding-left: calc(50% - 28px);
     line-height: 24px;
     font-size: 0.8rem;
     padding-right: 25px;
     background-image: url("../img/task6.png");
     background-repeat: no-repeat;
-    background-position: 52px 5px;
+    background-position: calc(50% - -46px) 5px;
     color: #a8a8a8;
     -moz-appearance: none;
     -webkit-appearance: none; }
@@ -134,6 +136,11 @@ body {
   margin-bottom: 60px; }
 
 .list-box-left {
+  width: 33.333%;
+  text-align: center;
+  border-right: 1px solid #bebec2; }
+
+.list-box-right {
   width: 33.333%;
   text-align: center; }
 
