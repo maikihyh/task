@@ -1,0 +1,90 @@
+$color:#69d1e9;
+$color1:#fff;
+$color2:#bebec2;
+$color3:#a8a8a8;
+$color4: #9a9a9a;
+$size:40px;
+$font:1rem;
+body{
+  min-width:($size * 8) ;
+  max-width:($size * 19);
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+.notice{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   height:$size ;
+  border-bottom:($size/40) solid $color3 ;
+  color:$color ;
+  padding: 0 ($size/4);
+  .notice-left{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    .son{
+      margin-left: ($size/2);
+    }
+  }
+}
+.game{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: ($size/2);
+  height: ($size*1.5);
+  color:$color4;
+  font-size:($font*0.9);
+  background-color: $color1;
+}
+.grad-ghost{
+  background-color: $color1;
+  margin:($size/4) ($size/2);
+  .grad-ghost-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:($size/2);
+    color: #fbb435;
+    font-size:($font*0.8) ;
+    border-bottom: ($size/40) solid #fbb435;
+  }
+  .simplify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $size;
+    margin:($size/4) ;
+    font-size: 40px;
+    background-color:$color ;
+     a{
+      text-decoration: none;
+      color:$color1;
+       font-size:($font*0.8);
+    }
+  }
+  .multi-player{
+    text-align: center;
+    line-height: ($size/2);
+    font-size:($font*0.8);
+  }
+  .circle-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:($size/2) ;
+    .circle{
+      width: ($size/6);
+      height:($size/6);
+      background-color: #9a9a9a;
+      border-radius:50%;
+      margin-right: ($size/4);
+    }
+    .circle:hover
+    {
+      background-color: $color;
+      cursor:pointer;
+    }
+  }
+}

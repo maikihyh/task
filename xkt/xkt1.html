@@ -70,7 +70,6 @@
         <section hidden="" aria-hidden="true" class="future" style="top: 330px; display: none;">
             <p style="letter-spacing: 5px">要让一个元素变成伸缩容器，需要使用display属性。采用flex布局的元素，称之为伸缩容器（flex container），容器内的子元素称之为伸缩项目（flex item）</p>
             <p style="letter-spacing: 5px">注意，浏览器会将任何直接在伸缩容器里的连续文字块包起来成为匿名伸缩项目。</p>
-            <p style="letter-spacing: 5px">使用flex布局实际上是使元素FFC化（flex formatting context伸缩格式化上下文），FFC是普通流的一种。而浮动流和定位流对FFC是有影响的。</p>
             <p style="letter-spacing: 5px">伸缩容器默认存在两条轴：水平的主轴（main axis）和垂直的侧轴（cross axis）或者说是交叉轴</p>
             <p style="letter-spacing: 5px">注意，主轴方向不一定是水平的，它主要取决于flex-direction属性</p>
             <p style="letter-spacing: 5px">主轴起点叫main start，主轴终点叫main end；侧轴起点叫cross start，侧轴终点叫cross end</p>
@@ -148,16 +147,7 @@
             <section style="top: 330px; display: none;">
                 <p style="text-align: center">
                     现在flex已经得到绝大部分的浏览器的支持，可以通过查看内核了解是否支持</p>
-                <p>.box {
 
-                    display: -webkit-flex;
-
-                    display: -ms-flexbox;
-
-                    display: flex;
-
-                    }
-                </p>
             </section>
         </section>
         <!-- <section hidden="" aria-hidden="true" class="future" style="top: 330px; display: none;">
@@ -247,11 +237,7 @@
         <div class="slide-background stack future" style="display: none;">
             <div class="slide-background present" style="display: none;"></div>
         </div>
-        <div class="slide-background stack future" style="display: none;">
-            <div class="slide-background present" style="display: none;"></div>
-            <div class="slide-background future" style="display: none;"></div>
-            <div class="slide-background future" style="display: none;"></div>
-        </div>
+吗，         <div class="slide-background stack future" style="display: none;"> </div>
         <div class="slide-background future" style="display: none;"></div>
         <div class="slide-background future" style="display: none;"></div>
         <div class="slide-background future" style="display: none;"></div>
@@ -262,8 +248,7 @@
         <button class="navigate-left enabled" aria-label="previous slide"></button>
         <button class="navigate-right enabled" aria-label="next slide"></button>
         <button class="navigate-up enabled" aria-label="above slide"></button>
-        <button class="navigate-down" aria-label="below slide"></button>
-    </aside>
+     </aside>
     <div class="slide-number" style="display: none;"></div>
     <div class="speaker-notes" data-prevent-swipe=""></div>
     <div class="pause-overlay"></div>

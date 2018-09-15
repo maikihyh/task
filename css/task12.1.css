@@ -7,11 +7,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
   position: fixed;
   z-index: 999999;
   width: 100%;
   top: 0;
-  max-width: 760px;
   height: 40px;
   background-color: #5ec0ce;
   font-size: 0.8rem; }
@@ -40,7 +42,6 @@ body {
 .list-box {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   height: 40px;
   padding: 0 10px;
   border-bottom: 1px solid #bebec2;
@@ -49,24 +50,25 @@ body {
     border: none;
     outline: none;
     line-height: 24px;
-    padding-right: 37px;
     border-right: 1px solid #bebec2;
+    padding-right: 25px;
     font-size: 0.8rem;
     background-image: url("../img/task6.png");
     background-repeat: no-repeat;
-    background-position: 55px 5px;
+    background-position: 52px 5px;
     color: #a8a8a8;
     -webkit-appearance: none; }
   .list-box .dropdown-box-right {
     border: none;
     outline: none;
     line-height: 24px;
-    padding-right: 37px;
     font-size: 0.8rem;
+    padding-right: 25px;
     background-image: url("../img/task6.png");
     background-repeat: no-repeat;
-    background-position: 55px 5px;
+    background-position: 52px 5px;
     color: #a8a8a8;
+    -moz-appearance: none;
     -webkit-appearance: none; }
 
 .in-df-protection_left {
@@ -107,7 +109,9 @@ body {
   z-index: 999999;
   width: 100%;
   bottom: 0;
+  min-width: 320px;
   max-width: 760px;
+  margin: 0 auto;
   height: 60px;
   font-size: 0.6rem;
   background-color: #fff; }
@@ -128,5 +132,9 @@ body {
 
 .bug {
   margin-bottom: 60px; }
+
+.list-box-left {
+  width: 33.333%;
+  text-align: center; }
 
 /*# sourceMappingURL=task12.1.css.map */

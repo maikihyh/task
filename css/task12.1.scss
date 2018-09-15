@@ -13,11 +13,13 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-width:($size * 8) ;
+  max-width:($size * 19);
+  margin: 0 auto;
   position: fixed;
   z-index:999999;
   width: 100%;
   top:0;
-  max-width: 760px;
   height: $size;
   background-color:$color;
   font-size: ($font*0.8);
@@ -50,7 +52,6 @@ body{
 .list-box{
   display:flex ;
   align-items: center;
-  justify-content: space-around;
   height: ($size*1) ;
   padding: 0  ($size/4);
   border-bottom: ($size/40) solid $color2;
@@ -59,12 +60,12 @@ body{
   border: none;
   outline:none;
   line-height: ($size*0.6);
-  padding-right: 37px;
   border-right: ($size/40) solid $color2;
+  padding-right: 25px;
   font-size:($font*0.8) ;
   background-image: url("../img/task6.png");
   background-repeat:no-repeat;
-  background-position:55px 5px ;
+  background-position:52px 5px ;
   color: $color3;
   -webkit-appearance:none;
 }
@@ -72,12 +73,13 @@ body{
     border: none;
     outline:none;
     line-height: ($size*0.6);
-    padding-right: 37px;
     font-size:($font*0.8) ;
+    padding-right: 25px;
     background-image: url("../img/task6.png");
     background-repeat:no-repeat;
-    background-position:55px 5px ;
+    background-position:52px 5px ;
     color: $color3;
+    -moz-appearance:none;
     -webkit-appearance:none;
   }
 }
@@ -123,7 +125,9 @@ body{
   z-index:999999;
   width: 100%;
   bottom:0;
-  max-width: 760px;
+  min-width:($size * 8) ;
+  max-width:($size * 19);
+  margin: 0 auto;
   height: ($size*1.5);
   font-size: ($font*0.6);
   background-color: $color1;
@@ -147,5 +151,9 @@ body{
 }
 .bug{
   margin-bottom: ($size*1.5);
+}
+.list-box-left{
+width: 33.333%;
+  text-align: center;
 }
 
