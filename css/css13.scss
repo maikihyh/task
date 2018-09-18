@@ -6,10 +6,15 @@ $color4: #9a9a9a;
 $size:40px;
 $font:1rem;
 body{
+  margin: 0 auto;
+  background-color: #f0f0f0;
+}
+.max{
+  position: relative;
   min-width:($size * 8) ;
   max-width:($size * 19);
   margin: 0 auto;
-  background-color: #f0f0f0;
+  overflow: hidden;
 }
 .notice{
   display: flex;

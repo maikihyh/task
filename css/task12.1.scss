@@ -5,9 +5,9 @@ $color3:#a8a8a8;
 $size:40px;
 $font:1rem;
 body{
+  margin: 0 auto;
   min-width:($size * 8) ;
   max-width:($size * 19);
-  margin: 0 auto;
 }
 .logo{
   display: flex;
