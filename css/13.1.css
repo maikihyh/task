@@ -70,7 +70,8 @@ main {
   .father-box .option {
     width: 25%;
     flex-shrink: 0;
-    margin: 20px 10px 40px 10px; }
+    margin: 20px 10px 40px 10px;
+    cursor: pointer; }
     .father-box .option .option-player {
       border: 4px solid #fff; }
       .father-box .option .option-player .option-player-left {

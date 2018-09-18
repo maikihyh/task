@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  position: relative; }
 
 .max {
   position: relative;
@@ -52,12 +53,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 60px;
-    margin: 10px;
+    margin: 10px 52px;
     background-color: #69d1e9; }
     .grad-ghost .simplify a {
       text-decoration: none;
       color: #fff;
       font-size: 1.2rem; }
+    .grad-ghost .simplify .box {
+      width: 0;
+      height: 0;
+      border-top: 24px solid transparent;
+      border-bottom: 24px solid transparent;
+      border-left: 20px solid #fbb435;
+      position: absolute;
+      top: 61%;
+      right: 40px;
+      transform: translatey(-50%);
+      cursor: pointer; }
   .grad-ghost .multi-player {
     text-align: center;
     line-height: 20px;

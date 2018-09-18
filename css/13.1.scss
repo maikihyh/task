@@ -84,6 +84,7 @@ main {
     width: 25%;
     flex-shrink: 0;
    margin: ($size/2) ($size/4) ($size/1) ($size/4);
+    cursor:pointer;
     .option-player {
     border: ($size/10) solid $color1;
       .option-player-left {
@@ -104,6 +105,7 @@ main {
 }
 .option-player:hover ~ .banner{
   opacity:1;
+
 }
 .footer-box{
   display: flex;
