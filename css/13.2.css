@@ -32,12 +32,12 @@ main {
 .news {
   display: flex;
   align-items: center;
-  margin: 10px 13vw 10px 13vw;
+  margin: 10px 9vw 10px 9vw;
   font-size: 0.8rem;
   color: #f5c97b; }
 
 .vote {
-  margin: 10px 13vw 10px 13vw;
+  margin: 10px 9vw 10px 9vw;
   font-size: 0.8rem;
   color: #fff; }
   .vote .list {
@@ -49,10 +49,10 @@ main {
   .link .status {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    margin: 0 9vw 5px 9vw; }
 
 .status span {
-  margin: 0 13vw 5px 13vw;
   font-size: 1rem; }
 
 .status p {
@@ -60,12 +60,12 @@ main {
   color: #c7c7c7; }
 
 .day {
-  margin: 0 13vw 5px 13vw;
+  margin: 0 9vw 5px 9vw;
   font-size: 0.8rem;
   color: #a6a6a6; }
 
 .night {
-  margin: 0 13vw 5px 13vw;
+  margin: 0 9vw 5px 9vw;
   font-size: 0.8rem;
   color: #a6a6a6; }
 

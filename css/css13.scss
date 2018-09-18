@@ -52,6 +52,8 @@ body{
     align-items: center;
     height:($size/2);
     color: #fbb435;
+   padding:($size/4) 0 ;
+    margin-bottom:($size/2) ;
     font-size:($font*0.8) ;
     border-bottom: ($size/40) solid #fbb435;
   }
@@ -59,20 +61,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: $size;
+    height: ($size*1.5);
     margin:($size/4) ;
-    font-size: 40px;
     background-color:$color ;
      a{
       text-decoration: none;
       color:$color1;
-       font-size:($font*0.8);
+       font-size:($font*1.2) ;
     }
   }
   .multi-player{
     text-align: center;
     line-height: ($size/2);
     font-size:($font*0.8);
+    padding:($size/4) 0 ;
   }
   .circle-box{
     display: flex;

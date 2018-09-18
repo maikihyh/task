@@ -64,24 +64,23 @@ main {
 
 .father-box {
   display: flex;
-  align-items: center; }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; }
   .father-box .option {
-    width: 27vw;
-    margin: 20px 10px 0 10px; }
+    width: 25%;
+    flex-shrink: 0;
+    margin: 20px 10px 40px 10px; }
     .father-box .option .option-player {
       border: 4px solid #fff; }
       .father-box .option .option-player .option-player-left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 13vw;
+        text-align: center;
+        padding: 25% 0;
         font-size: 1rem;
         background-color: #f5c97b; }
       .father-box .option .option-player .option-player-right {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 6vw;
+        text-align: center;
+        padding: 8% 0;
         font-size: 0.8rem;
         background-color: #83b09a;
         color: #fff; }
@@ -120,8 +119,8 @@ main {
 .banner {
   background: url(../img/task7.png) no-repeat;
   background-position: center;
-  height: 4vw;
-  background-size: 12vw;
+  height: 25%;
+  background-size: 100%;
   opacity: 0; }
 
 .icon1 {

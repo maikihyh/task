@@ -43,24 +43,26 @@ body {
     align-items: center;
     height: 20px;
     color: #fbb435;
+    padding: 10px 0;
+    margin-bottom: 20px;
     font-size: 0.8rem;
     border-bottom: 1px solid #fbb435; }
   .grad-ghost .simplify {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 60px;
     margin: 10px;
-    font-size: 40px;
     background-color: #69d1e9; }
     .grad-ghost .simplify a {
       text-decoration: none;
       color: #fff;
-      font-size: 0.8rem; }
+      font-size: 1.2rem; }
   .grad-ghost .multi-player {
     text-align: center;
     line-height: 20px;
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    padding: 10px 0; }
   .grad-ghost .circle-box {
     display: flex;
     justify-content: center;

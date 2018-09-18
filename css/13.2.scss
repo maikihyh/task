@@ -38,12 +38,12 @@ main{
 .news{
 display: flex;
   align-items: center;
-  margin:  10px 13vw 10px 13vw;
+  margin:  10px 9vw 10px 9vw;
   font-size:($font*0.8);
   color:#f5c97b ;
 }
 .vote{
-  margin:  10px 13vw 10px 13vw;
+  margin:  10px 9vw 10px 9vw;
   font-size: ($font*0.8);
   color: $color1;
   .list{
@@ -57,10 +57,11 @@ margin-top: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin:  0 9vw 5px 9vw;
   }
 }
 .status span{
-  margin:  0 13vw 5px 13vw;
+
   font-size: ($font*1);
 }
 .status p{
@@ -68,12 +69,12 @@ margin-top: 5px;
   color: #c7c7c7;
 }
 .day {
-  margin:  0 13vw 5px 13vw;
+  margin:  0 9vw 5px 9vw;
   font-size: ($font*0.8);
   color: #a6a6a6;
 }
 .night{
-  margin:  0 13vw 5px 13vw;
+  margin:  0 9vw 5px 9vw;
   font-size: ($font*0.8);
   color: #a6a6a6;
 }
