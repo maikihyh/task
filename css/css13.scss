@@ -8,7 +8,6 @@ $font:1rem;
 body{
   margin: 0 auto;
   background-color: #f0f0f0;
-  position: relative;
 }
 .max{
   position: relative;
@@ -47,6 +46,7 @@ body{
 .grad-ghost{
   background-color: $color1;
   margin:($size/4) ($size/2);
+  position: relative;
   .grad-ghost-game{
     display: flex;
     justify-content: center;
@@ -77,8 +77,8 @@ body{
       border-bottom: 24px solid transparent;
       border-left:  20px solid #fbb435;
       position:absolute;
-      top: 61%;
-      right: 40px;
+      top: 49%;
+      right: 22px;
       transform: translatey(-50%);
       cursor:pointer;
     }

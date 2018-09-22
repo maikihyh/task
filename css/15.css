@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.occupation {
+  margin: 10px 0;
+  font-size: 1rem;
+  cursor: pointer; }
+  .occupation p a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold; }
+  .occupation span {
+    color: #29b078; }
+
+.ordered-list-box {
+  border: 1px solid #e6e6e6;
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .ordered-list-box p {
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 20px; }
+  .ordered-list-box .software {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem; }
+
+.ordered-list {
+  list-style: none;
+  padding: 0; }
+  .ordered-list .video {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ff640c;
+    margin-top: 20px; }
+
+.software ul li:hover .video {
+  background-color: #ff640c; }
+
+.software ul li:hover .font {
+  color: #ff640c; }
+
+.to-potato-net p {
+  padding: 10px; }
+
+.todou-history p {
+  padding: 10px; }
+
+.todou-box {
+  border: 1px solid #e6e6e6;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  font-size: 0.8rem; }
+
+@media screen and (max-width: 400px) {
+  .to-potato-net img {
+    width: 50%; } }
+
+/*# sourceMappingURL=15.css.map */
