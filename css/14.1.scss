@@ -58,7 +58,7 @@ body{
   grid-template-rows: 180px 30px 30px 30px  30px 30px 30px 30px;
   color: #c6c6c6;
   border: 1px solid #d0d6d9;
-  font-size:($font*0.9) ;
+  font-size:($font*0.6) ;
   cursor: pointer;
 }
 .gird-one{
@@ -74,7 +74,7 @@ body{
 }
 .gird-two {
   grid-area: 1 / 11 / 1 /5;
-  padding: 10px 0 20px 10px;
+  padding:10px 15px;
   word-break:break-all;
   color: black;
   .ios-box{
@@ -87,7 +87,7 @@ body{
 .gird-three {
   line-height: 30px;
   grid-area: 2 / 6 / 2 / 1;
-  padding-left: 10px;
+  padding-left: 5px;
   border-top: 1px solid #d0d6d9;
   border-right: 1px solid #d0d6d9;
   border-bottom: 1px solid #d0d6d9;
@@ -95,21 +95,21 @@ body{
 .gird-four {
   line-height: 30px;
   grid-area: 2 / 11 / 2 / 6;
-  padding-left: 10px;
+  padding-left: 5px;
   border-top: 1px solid #d0d6d9;
   border-bottom: 1px solid #d0d6d9;
 }
 .gird-five {
   line-height: 30px;
   grid-area: 3 / 6 / 3 / 1;
-  padding-left: 10px;
+  padding-left: 5px;
   border-bottom: 1px solid #d0d6d9;
   border-right: 1px solid #d0d6d9;
 }
 .gird-six {
   line-height: 30px;
   grid-area: 3 / 11 / 3 / 6;
-  padding-left: 10px;
+  padding-left: 5px;
   border-bottom: 1px solid #d0d6d9;
 }
 .gird-seven{
@@ -117,7 +117,7 @@ body{
   border-right: 1px solid #d0d6d9;
 }
 .gird-eight{
-  padding: 0 10px ;
+  padding: 0 5px ;
   line-height: 30px;
   grid-area: 4 / 11 / 4 / 5;
   border-bottom: 1px solid #d0d6d9;
@@ -130,12 +130,12 @@ body{
 }
 .gird-ten{
   line-height: 30px;
-  padding: 0 10px ;
+  padding: 0 5px ;
   grid-area: 5 / 11 / 5 / 5;
   border-bottom: 1px solid #d0d6d9;
 }
 .gird-eleven{
-  padding: 0 10px;
+  padding: 0 5px;
   line-height: 30px;
   grid-area: 6 / 11 / 6 / 5;
   border-bottom: 1px solid #d0d6d9;
@@ -147,16 +147,16 @@ body{
 }
 .gird-thirteen{
   line-height: 30px;
-  padding-left: 10px;
+  padding-left:5px;
   border-left: 1px solid #d0d6d9;
   grid-area: 7 / 11 / 7 / 1;
   border-bottom: 1px solid #d0d6d9;
 }
 .gird-fifteen{
-  padding-left: 10px;
+  padding-left: 5px;
   grid-area: 8 / 11 / 8 / 1;
   line-height: 30px;
-  font-size:($font*0.8)
+  font-size:($font*0.6)
 }
 .time{
   color: black;
