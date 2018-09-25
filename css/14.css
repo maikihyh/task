@@ -76,6 +76,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  line-height: 30px;
   font-size: 1rem; }
   .logo span {
     color: #29b078;
@@ -83,7 +84,8 @@ label {
     text-overflow: ellipsis;
     white-space: nowrap; }
   .logo .img-amuse {
-    white-space: nowrap; }
+    white-space: nowrap;
+    display: flex; }
 
 #container-box {
   width: 100%;
@@ -120,8 +122,11 @@ label {
       border-left: 1px dashed #dedede; }
     .content .content-box .introduce {
       margin: 10px;
+      padding: 20px 10px;
       border: 1px solid #e2e2e2;
       box-shadow: 2px 2px 2px 2px #edecec; }
+  .content .row-box {
+    margin-top: 40px; }
   .content .rough-font {
     color: black;
     font-size: 1rem;
@@ -129,21 +134,21 @@ label {
 
 .how-to-learn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: 20px 0;
-  font-size: 0.8rem; }
+  font-size: 0.6rem; }
   .how-to-learn .number {
-    min-width: 50px;
     text-align: center;
     line-height: 50px;
     width: 50px;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px 1px #333333;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
     font-size: 1rem;
     color: #29b078; }
   .how-to-learn .detailed {
-    margin: 0  10px; }
+    max-width: 150px;
+    min-width: 150px; }
 
 .green-point {
   display: flex;
@@ -167,8 +172,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    border: 1px solid #fff; }
+    height: 200px; }
 
 @media screen and (max-width: 700px) {
   .img-photograph {
@@ -184,9 +188,9 @@ label {
   font-size: 0.8rem; }
   .friendship-link .box-circle {
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     margin-right: 3px;
     background-color: black; }
 
@@ -215,7 +219,8 @@ footer {
   cursor: pointer; }
 
 .tail-like-one {
-  margin-top: 20px; }
+  margin: 20px 0;
+  text-align: center; }
   .tail-like-one p {
     font-size: 0.8rem; }
 

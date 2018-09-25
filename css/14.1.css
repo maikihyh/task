@@ -28,6 +28,9 @@ body {
   .learning span {
     padding: 10px;
     background-color: white; }
+  .learning a {
+    text-decoration: none;
+    color: #999999; }
 
 .learning span:hover {
   background-color: #29b078;
@@ -151,7 +154,7 @@ body {
 
 .ios-box {
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: black;
   font-weight: bold; }
 
@@ -192,5 +195,9 @@ body {
     -webkit-transform: rotateY(720deg); } }
 .now :hover .engineer {
   display: block; }
+
+@media screen and (max-width: 400px) {
+  .gird-two {
+    padding-right: 0; } }
 
 /*# sourceMappingURL=14.1.css.map */

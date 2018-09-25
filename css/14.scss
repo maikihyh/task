@@ -85,6 +85,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  line-height: 30px;
   font-size: $font;
   span{
     color:$color ;
@@ -94,6 +95,7 @@ label {
   }
   .img-amuse{
     white-space: nowrap;
+    display: flex;
   }
 }
 #container-box {
@@ -138,9 +140,13 @@ label {
     }
     .introduce{
       margin: 10px;
+      padding: 20px 10px;
       border: 1px solid #e2e2e2;
       box-shadow: 2px 2px 2px 2px #edecec;
     }
+  }
+  .row-box{
+    margin-top: 40px;
   }
   .rough-font{
     color: black;
@@ -150,22 +156,22 @@ label {
 }
 .how-to-learn{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
     margin: ($size/2) 0;
-  font-size:($font*0.8) ;
+  font-size:($font*0.6) ;
   .number{
-    min-width: 50px;
     text-align: center;
     line-height: 50px;
     width: 50px;
     border-radius: 50%;
-    box-shadow: 1px 1px 1px 1px #333333;
+    box-shadow: 1px 1px 1px 1px #f0f0f0;
     font-size: ($font*1);
     color: #29b078;
   }
   .detailed{
-    margin:0  10px;
+    max-width: 150px;
+    min-width: 150px;
   }
 }
 .green-point {
@@ -192,7 +198,6 @@ margin:($size/2) 0;
     align-items: center;
     justify-content: center;
     height: 200px;
-    border: 1px solid #fff;
   }
 }
 @media screen and (max-width:700px){
@@ -206,15 +211,15 @@ margin:($size/2) 0;
 }
 
 .friendship-link{
-  text-align: center;
+ text-align: center;
   margin-bottom: 10px;
   border-bottom: 1px solid #fff;
   font-size: ($font*0.8);
   .box-circle{
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
     margin-right: 3px;
     background-color: black;
   }
@@ -245,7 +250,8 @@ footer{
   cursor:pointer;
 }
 .tail-like-one{
-  margin-top: 20px;
+  margin: 20px 0;
+  text-align: center;
  p{
    font-size: ($font*0.8);
  }
