@@ -251,8 +251,12 @@ footer{
 }
 .tail-like-one{
   margin: 20px 0;
-  text-align: center;
+
  p{
    font-size: ($font*0.8);
  }
+  .tail-like-one-p{
+    padding-left: 6px;
+    padding-bottom: 10px;
+  }
 }

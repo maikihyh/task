@@ -219,9 +219,11 @@ footer {
   cursor: pointer; }
 
 .tail-like-one {
-  margin: 20px 0;
-  text-align: center; }
+  margin: 20px 0; }
   .tail-like-one p {
     font-size: 0.8rem; }
+  .tail-like-one .tail-like-one-p {
+    padding-left: 6px;
+    padding-bottom: 10px; }
 
 /*# sourceMappingURL=14.css.map */
