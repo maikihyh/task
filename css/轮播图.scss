@@ -67,7 +67,12 @@ background-color: #d0d6d9;
 #l03:checked ~ #wrap #slider {
   margin-left:-200%;
 }
-#l01:checked ~  .dot5 , #l01:checked ~  .dot6{
+#l01:checked ~  .dot5{
+  display: block;
+  cursor: pointer;
+  left: 90%;
+}
+#l01:checked ~  .dot6{
   display: block;
   cursor: pointer;
 }
@@ -108,7 +113,7 @@ background-color: #d0d6d9;
 .dot5{
   position: absolute;
   top: 50%;
-  right: 9%;
+  right: 8%;
   width: 10px;
   height: 10px;
   border-top: 5px solid #e7e7e7;
