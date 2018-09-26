@@ -76,7 +76,7 @@ background-color: #d0d6d9;
   cursor: pointer;
 }
 #l02:checked ~  .dot6{
-  left: 88%;
+  left: 90%;
   display: block;
   cursor: pointer;
   transform: rotate(45deg);
@@ -90,7 +90,7 @@ background-color: #d0d6d9;
 #l03:checked ~  .dot4{
   display: block;
   cursor: pointer;
-  left: 88%;
+  left: 90%;
   transform: rotate(45deg);
 }
 .dot4{
@@ -108,7 +108,7 @@ background-color: #d0d6d9;
 .dot5{
   position: absolute;
   top: 50%;
-  right: 8%;
+  right: 9%;
   width: 10px;
   height: 10px;
   border-top: 5px solid #e7e7e7;

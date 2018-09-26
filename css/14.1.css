@@ -45,10 +45,14 @@ body {
   font-weight: bold;
   font-size: 1.2rem; }
 
+.now {
+  margin-bottom: 20px; }
+
 .wrapper {
   display: grid;
   position: relative;
-  margin: 20px 10px 20px 0;
+  max-width: 450px;
+  margin: 20px 10px 20px 10px;
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
   grid-template-rows: 180px 30px 30px 30px  30px 30px 30px 30px;
   color: #c6c6c6;
@@ -199,5 +203,8 @@ body {
 @media screen and (max-width: 400px) {
   .gird-two {
     padding-right: 0; } }
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=14.1.css.map */
