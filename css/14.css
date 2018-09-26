@@ -110,6 +110,7 @@ label {
   font-size: 1.5rem;
   color: black;
   font-weight: bold;
+  margin-top: 80px;
   margin-bottom: 20px; }
 
 .content {
@@ -119,7 +120,8 @@ label {
     margin: 20px 0 20px 0;
     font-size: 0.8rem; }
     .content .content-box .content-box-profile {
-      border-left: 1px dashed #dedede; }
+      border-left: 1px dashed #dedede;
+      padding-top: 20px; }
     .content .content-box .introduce {
       margin: 10px;
       padding: 20px 10px;

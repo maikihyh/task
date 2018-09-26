@@ -127,6 +127,7 @@ label {
   font-size:($font*1.5);
   color: black;
   font-weight: bold;
+  margin-top:($size*2) ;
   margin-bottom: ($size/2);
 }
 .content{
@@ -137,6 +138,7 @@ label {
     font-size: ($font*0.8);
     .content-box-profile{
       border-left: 1px dashed #dedede;
+      padding-top: 20px;
     }
     .introduce{
       margin: 10px;
