@@ -7,6 +7,7 @@ body{
   margin: 0;
   padding: 0;
   color: #999999;
+  background-color: #fafafa;
 }
 .center-box{
   background-color: $color;
@@ -200,6 +201,7 @@ margin:($size/2) 0;
     align-items: center;
     justify-content: center;
     height: 200px;
+    background-color: #ffffff;
   }
 }
 @media screen and (max-width:700px){
@@ -261,4 +263,7 @@ footer{
     padding-left: 6px;
     padding-bottom: 10px;
   }
+}
+.learn-box{
+  background-color: #ffffff;
 }
