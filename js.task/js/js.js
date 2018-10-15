@@ -19,7 +19,6 @@ function changeBg() {
         return newArr;
     }//洗牌算法
     console.log(sort());
-    var dd = sort;
     var x=document.getElementsByTagName("div");
     for (var i=0;i<9;i++){
         x[i].style.backgroundColor = "orange";
