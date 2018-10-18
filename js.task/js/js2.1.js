@@ -1,3 +1,7 @@
+
+function   add(){
+    window.location.href="https://maikihyh.github.io/task/js.task/html/js2.html";
+}
 function add2(){
     if (document.getElementById("input1").value>3&&document.getElementById("input1").value<19  ){
         var a=roleArray();

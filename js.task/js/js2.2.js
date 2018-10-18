@@ -13,8 +13,8 @@ function check() {
         }else {
             reveal();
         }
-    }
-    checkNum ++;
+    }//点击次数达到跳转奇数运行第一个函数偶数第2个函数
+    checkNum ++;//累加
     console.log(checkNum);
 }
 function reveal() {
@@ -24,7 +24,7 @@ function reveal() {
     document.getElementById("civilian").style.display="none";
     document.getElementById("identity").style.display="none";
     n++;
-}
+}//显示第一张图片其他隐藏
 
 function hide() {
     if (n+1 === arr.length){
@@ -36,4 +36,4 @@ function hide() {
     document.getElementById("identity").style.display = "block";
     document.getElementById("civilian").style.display = "block";
     document.getElementById("identity").innerHTML = "身份: " + arr[n];
-}
+}//如果点击最后一次变内容，其他显示身份调用存到浏览器的数组，改变按钮内容，累加。
