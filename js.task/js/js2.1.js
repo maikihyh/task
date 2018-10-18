@@ -1,11 +1,9 @@
-
-function   add(){
-    window.location.href="https://maikihyh.github.io/task/js.task/html/js2.html";
-}//跳转页面.
 function add2(){
     if (document.getElementById("input1").value>3&&document.getElementById("input1").value<19  ){
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.html";
-    }
+        var a=roleArray();
+        localStorage.setItem("name",a );//存储分配的数组
+        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.2.html";
+    }//跳转页面
        else{
       alert("请输入正确的人数4~18并重新点击");
         document.getElementById("input1").value="";
@@ -47,15 +45,13 @@ function roleArray(){
         var j = Math.floor(Math.random() * (len - i));
         newArr[i] = num3[j];
         num3.splice(j, 1)
-    } a=newArr;
-    console.log(a);
+    }
+    console.log(newArr);
     return newArr;
-    //洗牌算法打乱随机分配身份
+    //洗牌算法打乱随机分配身份n
 }
-var a;
 //向下取整产生平民杀手人数
 function change(){
-    localStorage.setItem("name","a");//存储
     var number1=document.getElementById("range");
     var location=document.getElementById("input1");
     location.value=number1.value;
@@ -72,4 +68,14 @@ function subnum(){
     num.value=num.value-1;
     change()
 }//减号减少人数一次为1
+function smch()
+{
+var shui=document.getElementById("button1").value;
+    localStorage.setItem("name",shui );//存储水民词组
 
+}
+function ssch()
+{
+var sha=document.getElementById("button2").value;
+    localStorage.setItem("name",sha );//存储杀手词组
+}

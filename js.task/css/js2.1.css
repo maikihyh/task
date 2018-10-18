@@ -1,0 +1,108 @@
+body {
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
+  background-color: #f0f0f0; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 52px;
+  background-color: #69d1e9; }
+  header div {
+    color: #fff;
+    font-size: 1.2rem; }
+  header a {
+    cursor: pointer; }
+  header img {
+    margin: 0 20px; }
+
+.player-ratio {
+  text-align: center;
+  line-height: 40px;
+  font-size: 1rem;
+  background-color: #fff;
+  margin: 10px 10px;
+  box-shadow: 1px 1px 1px 1px #d1d2d4; }
+
+.number {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+  margin: 10px;
+  padding: 10px 0 0 0;
+  font-size: 0.9rem;
+  background-color: #fff; }
+  .number div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px; }
+
+.input-box {
+  margin: 0 10px 10px 10px;
+  background-color: #fff;
+  padding: 10px 20px 20px 20px; }
+  .input-box input {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0; }
+
+.setting-player {
+  margin: 0 10px 10px 10px;
+  height: 120px;
+  padding: 10px 20px 10px 20px;
+  font-size: 1rem;
+  background-color: #fff; }
+  .setting-player #input1 {
+    width: 20px;
+    outline: none;
+    color: #fab344; }
+  .setting-player span {
+    margin-left: 10px;
+    font-size: 0.8rem;
+    color: #fab344; }
+
+footer {
+  text-align: center;
+  margin: 0 10px 0 10px;
+  line-height: 40px;
+  background-color: #fab344; }
+  footer a {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem; }
+
+.control-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; }
+  .control-input input[type=range] {
+    -webkit-appearance: none;
+    outline: none;
+    width: 60%;
+    height: 4px;
+    background-color: #fab344;
+    cursor: pointer; }
+  .control-input input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: url("../img/11.png") no-repeat;
+    background-size: 100% 100%;
+    width: 40px;
+    height: 20px; }
+  .control-input input[type=button] {
+    margin: 0 25px;
+    width: 30px;
+    height: 22px;
+    border: 1px solid #d9d9d9;
+    font-weight: bold;
+    color: #fab344;
+    background-color: #fff;
+    outline: none;
+    cursor: pointer; }
+
+/*# sourceMappingURL=js2.1.css.map */

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏time</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/js2.css">
+    <style type="text/css">
+        /*隐藏checked复选框*/
+        #sidemenu{
+            display: none;
+        }
+        #sidemenu:checked + aside{
+            /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+            left: 0;
+            display: block;
+        }
+        aside {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -50%;
+            width: 50%;
+            transition: 0.2s ease-out;
+            background-color: whitesmoke;
+            display: none;
+        }
+        /*控制侧边栏进出的按钮（外部包裹）*/
+        .wrap-left{
+            transition: 0.2s ease-out;
+            background-color:#69d1e9 ;
+            padding: 0 10px;
+            color: white;
+        }
+        #sidemenu:checked ~ #wrap {
+            /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+            padding-left: 50%;
+            margin-right: -50%;
+        }
+        /*控制侧边栏进出的按钮（内部文字样式）*/
+        label {
+            /*控制侧边栏进出的按钮*/
+            background: #69d1e9;
+            border-radius: 70px;
+            cursor: pointer;
+            display: block;
+            font-family: Courier New;
+            font-size: 2em;
+            width: 1.5em;
+            height: 1.5em;
+            line-height: 1.5em;
+            text-align: center;
+            display: inline-block;
+        }
+
+    </style>
+    <script src="../js/js2.js"></script>
+
+</head>
+
+<body>
+<div class="max">
+    <header>
+        <input type='checkbox' id='sidemenu'>
+        <aside>
+            <div class="notice">
+                <div class="notice-left"><img src="../../img/task13 (4).png" height="20" width="20"/><span class="son">公告</span></div>
+                <img src="../../img/task13 (5).png" height="20" width="20"/>
+            </div>
+            <div class="notice">
+                <div class="notice-left"><img src="../../img/task13 (2).png" height="20" width="20"/><span class="son">设置</span></div>
+                <img src="../../img/task13 (5).png" height="20" width="20"/>
+            </div>
+            <div class="notice">
+                <div class="notice-left"><img src="../../img/task13%20(3).png" height="20" width="20"/>   <span class="son">帮助</span></div>
+                <img src="../../img/task13 (5).png" height="20" width="20"/>
+            </div>
+            <div class="notice">
+                <div class="notice-left"> <img src="../../img/task13.png" height="20" width="20"/><span class="son">关于</span></div>
+                <img src="../../img/task13 (5).png" height="20" width="20"/>
+            </div>
+        </aside>
+        <div id='wrap'>
+            <div class="wrap-left">
+                <label id='sideMenuControl' for='sidemenu'>≡</label>
+                <!--for 属性规定 label 与哪个表单元素绑定，即将这个控制侧边栏进出的按钮与checkbox绑定-->
+            </div>
+
+
+            <div class="nav">
+
+            </div>
+
+
+            <div class="game">
+                <div> </div>
+                <div>上次游戏： 抓鬼猜词版</div>
+                <img src="../../img/task13 (6).png" height="32" width="32"/>
+            </div>
+
+            <div class="grad-ghost">
+                <div class="grad-ghost-game">
+                    抓鬼游戏
+                </div>
+                <div class="simplify">
+                    <a  onclick="add()"> 简化版   </a>
+                </div>
+                <div class="multi-player">
+                    有1133个用户正在玩此款游戏</div>
+                <div class="simplify">
+                    <a  href="https://maikihyh.github.io/task/html/task13.1.html"> 猜词版  </a>
+                    <a  href="https://maikihyh.github.io/task/html/task13.1.html"> <div class="box">
+                    </div></a>
+                </div>
+
+                <div class="multi-player">
+                    有1133个用户正在玩此款游戏</div>
+                <div class="simplify">
+                    <a  href="https://maikihyh.github.io/task/html/task13.1.html"> 白痴版  </a>
+                </div>
+                <div class="multi-player">
+                    有1133个用户正在玩此款游戏</div>
+                <div class="circle-box">
+                    <div class="circle">  </div>
+                    <div class="circle">  </div>
+                    <div class="circle">  </div>
+                    <div class="circle">  </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </header>
+
+</div>
+</body>
+</html>
