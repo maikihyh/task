@@ -1,0 +1,27 @@
+body {
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 760px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  border-bottom: 1px solid #74d4eb;
+  height: 40px;
+  background-color: #29bde0;
+  color: #fff;
+  font-size: 1.2rem; }
+  header a {
+    height: 20px;
+    cursor: pointer; }
+  header img {
+    margin: 0 20px; }
+
+/*# sourceMappingURL=js3.1.css.map */

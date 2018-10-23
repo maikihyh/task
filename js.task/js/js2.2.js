@@ -6,7 +6,7 @@ var n = 0;
 
 function check() {
     if (checkNum >= (2 * arr.length)){
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js4.html";
+        window.location.href="https://maikihyh.github.io/task/js.task/html/js3.html";
     }else {
         if (checkNum % 2 !== 0){
             hide();

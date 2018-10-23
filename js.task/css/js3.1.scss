@@ -1,0 +1,31 @@
+$color:#fff;
+$size:40px;
+$font:1rem;
+body{
+  min-width:($size * 8) ;
+  max-width:($size * 19);
+  margin: 0 auto;
+  padding: 0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width:($size * 19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  border-bottom: 1px solid #74d4eb;
+  height: ($size);
+  background-color: #29bde0;
+  color:$color ;
+  font-size:($font *1.2) ;
+  a{
+    height: 20px;
+    cursor:pointer;
+  }
+  img{
+    margin: 0 ($size / 2);
+  }
+}
