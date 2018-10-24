@@ -6,6 +6,7 @@ body{
   max-width:($size * 19);
   margin: 0 auto;
   padding: 0;
+  background-color: #f0f0f0;
 }
 header{
   display: flex;
@@ -27,5 +28,81 @@ header{
   }
   img{
     margin: 0 ($size / 2);
+  }
+}
+main{
+  min-height: 100vh;
+  margin: ($size *1.5)  ($size/4 ) 0  ($size/4 );
+  border: 1px solid #c9c9c9;
+  .day{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: ($size *1.5);
+    margin-bottom: ($size *0.5) ;
+    background-color:$color ;
+    border-bottom: 1px solid #c9c9c9;
+    span{
+      color:#24a7c6 ;
+      font-size:($font *1.2) ;
+    }
+    img{
+      margin: 0 20px;
+    }
+    .box-day{
+     width:($size *1.5) ;
+    }
+  }
+}
+.father-box{
+  display: flex;
+  border-bottom: 1px solid #c9c9c9;
+}
+.a-day{
+  width: 20%;
+  padding-left:($size *0.5) ;
+  .night-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: ($size *1);
+    height: ($size *1);
+    border: 1px solid #d6d6d6;
+    border-radius:50%;
+  }
+  .strip{
+    width: 2px;
+    height: ($size *1);
+    background-color: #d6d6d6;
+    margin-left: ($size *0.5);
+  }
+  .strip1{
+    width: 2px;
+    height: ($size *2.5);
+    background-color: #d6d6d6;
+    margin-left: ($size *0.5);
+  }
+}
+.flow{
+  width: 70%;
+  .flow-box{
+    display: flex;
+    align-items: center;
+  }
+  .triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer;
+  }
+  .killing{
+    text-align: center;
+    width:100%;
+    line-height:($size *1) ;
+    margin: ($size /4) 0;
+    color:$color ;
+    background-color:#24a7c6 ;
   }
 }
