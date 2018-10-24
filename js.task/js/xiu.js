@@ -1,6 +1,8 @@
-function two(){
-        alert("让你点就点傻吗，老女人");
-        alert("怎么还点");
+function two() {
+    alert("信不信你出不去了");
+    alert("现在知道谁最美了吗");
+    alert("让你点就点傻吗，老女人");
+    alert("怎么还点");
     alert("1");
     alert("2");
     alert("3");
@@ -9,8 +11,42 @@ function two(){
     alert("6");
     alert("7");
     alert("8");
+    alert("9");
+    alert("10");
+    alert("1");
+    alert("2");
+    alert("3");
+    alert("4");
+    alert("5");
+    alert("6");
+    alert("7");
+    alert("8");
+    alert("9");
+    alert("10");
+    alert("1");
+    alert("2");
+    alert("3");
+    alert("4");
+    alert("5");
+    alert("6");
+    alert("7");
+    alert("8");
+    alert("9");
+    alert("10");
+    alert("1");
+    alert("2");
+    alert("3");
+    alert("4");
+    alert("5");
+    alert("6");
+    alert("7");
+    alert("8");
+    alert("9");
+    alert("10");
     alert("加油哦");
     alert("哈哈哈");
     alert("努力");
     alert("可以的");
+    alert("累不累");
+    alert("放过你了");
 }
