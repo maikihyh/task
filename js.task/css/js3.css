@@ -30,16 +30,18 @@ header {
   #all-box .box {
     display: inline-block;
     width: 28%;
-    margin: 1% 2.3% 10% 2.3%; }
+    margin: 1% 2.3% 5% 2.3%;
+    cursor: pointer; }
     @media screen and (max-width: 600px) {
       #all-box .box {
         width: 28%;
-        margin: 1% 2.6% 10% 2.6%; } }
+        margin: 1% 2.6% 5% 2.6%; } }
     #all-box .box .img {
       background: url(../img/js4.png) no-repeat;
       background-position: center;
-      height: 25%;
-      background-size: 100%; }
+      height: 10vw;
+      background-size: 30%;
+      opacity: 0; }
   #all-box .box-time {
     width: 100%;
     border: 4px solid #fff; }

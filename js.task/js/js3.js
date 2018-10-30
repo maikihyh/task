@@ -20,13 +20,12 @@ function the() {
 window.location.href="https://maikihyh.github.io/task/js.task/html/js3.1html";
 }//跳转页面
 
-var a=1;
-function thefei(){
-    if (a % 2 !==0   ){
-        alert("确定要离开游戏吗，亲");
-
-    }else {
+function thefei() {
+    if (confirm("要离开页面，重新分配人数吗"))
+    {
         window.location.href="https://maikihyh.github.io/task/js.task/html/js2.1.html";
     }
-    a ++;
+    else
+    {
+    }
 }

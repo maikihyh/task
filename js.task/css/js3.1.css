@@ -75,7 +75,8 @@ main {
   width: 70%; }
   .flow .flow-box {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
   .flow .triangle {
     width: 0;
     height: 0;

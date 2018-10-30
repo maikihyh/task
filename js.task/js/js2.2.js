@@ -37,3 +37,12 @@ function hide() {
     document.getElementById("civilian").style.display = "block";
     document.getElementById("identity").innerHTML = "身份: " + arr[n];
 }
+function number() {
+    if (confirm("要离开页面，重新分配人数吗"))
+    {
+        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.1.html";
+    }
+    else
+    {
+    }
+}

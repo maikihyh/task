@@ -22,7 +22,7 @@ function changeBg() {
     var x=document.getElementsByTagName("div");
     for (var i=0;i<9;i++){
         x[i].style.backgroundColor = "orange";
-    }
+    }//每次开始改变颜色，先变回原色
     var div1 = document.getElementsByClassName("div1");
     //   var num1 = Math.random() * arr.length;
     //   num1 = Math.floor(num1);
