@@ -95,11 +95,15 @@ header{
     width: 80%;
     line-height: ($size*1);
     background-color: #fbb435;
-    a{
-      text-decoration: none;
-      color:$color;
+    color: #fff;
+    button{
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
+      color: #fff;
+      background-color: #fbb435;
       font-size:$font;
-
+      cursor:pointer;
     }
   }
 }

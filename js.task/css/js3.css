@@ -79,10 +79,15 @@ header {
     text-align: center;
     width: 80%;
     line-height: 40px;
-    background-color: #fbb435; }
-    .footer-box .vote a {
-      text-decoration: none;
+    background-color: #fbb435;
+    color: #fff; }
+    .footer-box .vote button {
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
       color: #fff;
-      font-size: 1rem; }
+      background-color: #fbb435;
+      font-size: 1rem;
+      cursor: pointer; }
 
 /*# sourceMappingURL=js3.css.map */

@@ -16,14 +16,18 @@ function fun() {
         a++;
     }
 }
+var number=[];
 function the() {
-window.location.href="https://maikihyh.github.io/task/js.task/html/js3.1html";
+    localStorage.setItem("number", number);
+   window.location.href="js3.1.html";
+
 }//跳转页面
 
 function thefei() {
     if (confirm("要离开页面，重新分配人数吗"))
     {
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.1.html";
+        window.location.href="js2.1.html";
+        localStorage.clear();
     }
     else
     {

@@ -1,0 +1,99 @@
+body {
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #29bde0;
+  height: 40px;
+  font-size: 1rem;
+  color: #fff;
+  border-bottom: 1px solid #dddddd; }
+  header img {
+    margin: 0 10px; }
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: 320px;
+  max-width: 760px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(48, 189, 224, 0.7);
+  color: #fff; }
+  footer .btn {
+    width: 45%;
+    line-height: 40px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f66f6f; }
+    footer .btn button {
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
+      color: #fff;
+      cursor: pointer;
+      background-color: #f66f6f; }
+  footer .noon {
+    width: 45%;
+    line-height: 40px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fbb435; }
+    footer .noon button {
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
+      color: #fff;
+      cursor: pointer;
+      background-color: #fbb435; }
+
+main {
+  background-color: #29bde0; }
+
+.police {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .police .police-font {
+    position: absolute;
+    top: 170px;
+    font-size: 2rem;
+    color: #fff; }
+
+.vote {
+  margin: 10px 9vw 10px 9vw;
+  font-size: 0.8rem;
+  color: #fff; }
+  .vote .list {
+    padding: 10px 0; }
+
+.box {
+  height: 100px;
+  border-bottom: 1px solid #dddddd; }
+  .box .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 9vw 0 9vw; }
+
+.day {
+  margin: 0 9vw 5px 9vw;
+  font-size: 0.8rem;
+  color: #a6a6a6; }
+
+.night {
+  margin: 0 9vw 5px 9vw;
+  font-size: 0.8rem;
+  color: #a6a6a6; }
+
+.height {
+  height: 80px; }
+
+/*# sourceMappingURL=js4.1.css.map */

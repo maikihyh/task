@@ -1,12 +1,17 @@
 
 function   add(){
-    window.location.href="https://maikihyh.github.io/task/js.task/html/js2.html";
+    if (confirm("要离开页面，重新分配人数吗")) {
+   window.location.href="js2.html";
+}
+else {
+
+    }
 }
 function add2(){
     if (document.getElementById("input1").value>3&&document.getElementById("input1").value<19  ){
         var a=roleArray();
         localStorage.setItem("name",a );//存储分配的数组
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.2.html";
+        window.location.href="js2.2.html";
     }//跳转页面
        else{
       alert("请输入正确的人数4~18并重新点击");

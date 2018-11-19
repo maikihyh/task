@@ -1,12 +1,14 @@
 var infoStr = localStorage.getItem("name");
 var arr = infoStr.split(',');
+var arr1 = arr.slice(0);
+localStorage.setItem("name1",arr1 );
 console.log(arr);
 var checkNum = 1;
 var n = 0;
-
 function check() {
     if (checkNum >= (2 * arr.length)){
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js3.html";
+        localStorage.setItem("day",1);
+        window.location.href="js3.html";
     }else {
         if (checkNum % 2 !== 0){
             hide();
@@ -26,7 +28,7 @@ function reveal() {
     n ++;
     console.log(arr.length);
 }
-function hide() {
+function hide(){
     if (n+1 === arr.length){
         document.getElementById('click').innerHTML = "查看法官日志";
     }else {
@@ -40,7 +42,7 @@ function hide() {
 function number() {
     if (confirm("要离开页面，重新分配人数吗"))
     {
-        window.location.href="https://maikihyh.github.io/task/js.task/html/js2.1.html";
+        window.location.href="js2.1.html";
     }
     else
     {
