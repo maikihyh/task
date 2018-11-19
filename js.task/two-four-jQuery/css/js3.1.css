@@ -1,0 +1,168 @@
+body {
+  min-width: 320px;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f0f0f0; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 760px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  border-bottom: 1px solid #74d4eb;
+  height: 40px;
+  background-color: #29bde0;
+  color: #fff;
+  font-size: 1.2rem; }
+  header a {
+    height: 20px;
+    cursor: pointer; }
+  header img {
+    margin: 0 20px; }
+
+main {
+  min-height: 100vh;
+  margin: 60px 10px 0 10px;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9; }
+  main .day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #c9c9c9;
+    border-top: 1px solid #c9c9c9;
+    cursor: pointer; }
+    main .day span {
+      color: #24a7c6;
+      font-size: 1.2rem; }
+    main .day img {
+      margin: 0 20px; }
+    main .day .box-day {
+      width: 60px; }
+
+.father-box {
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: 40px; }
+
+.a-day {
+  display: inline-block;
+  width: 20%;
+  padding-left: 20px; }
+  .a-day .night-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d6d6d6;
+    border-radius: 50%; }
+  .a-day .strip {
+    width: 2px;
+    height: 60px;
+    background-color: #d6d6d6;
+    margin-left: 20px; }
+  .a-day .strip1 {
+    width: 2px;
+    height: 160px;
+    background-color: #d6d6d6;
+    margin-left: 20px; }
+
+.flow {
+  float: right;
+  margin-right: 20px;
+  width: 65%; }
+  .flow .flow-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer; }
+  .flow p {
+    text-align: center;
+    font-size: 0.8rem; }
+  .flow .triangle {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer; }
+  .flow .triangle1 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer; }
+  .flow .triangle2 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer; }
+  .flow .triangle3 {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer; }
+  .flow .killing {
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    background-color: #24a7c6; }
+  .flow .killing1 {
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    background-color: #24a7c6; }
+  .flow .killing2 {
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    background-color: #24a7c6; }
+  .flow .killing3 {
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    background-color: #24a7c6; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 760px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  height: 60px;
+  background-color: rgba(48, 189, 224, 0.5);
+  color: #fff;
+  font-size: 1.2rem; }
+  footer #end {
+    text-align: center;
+    line-height: 40px;
+    width: 45%;
+    background-color: #fab344;
+    cursor: pointer; }
+  footer #journal {
+    text-align: center;
+    line-height: 40px;
+    width: 45%;
+    background-color: #fab344;
+    cursor: pointer; }
+
+/*# sourceMappingURL=js3.1.css.map */

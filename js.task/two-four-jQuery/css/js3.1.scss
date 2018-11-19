@@ -1,0 +1,193 @@
+$color:#fff;
+$size:40px;
+$font:1rem;
+body{
+  min-width:($size * 8) ;
+  max-width:($size * 19);
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width:($size * 19);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  border-bottom: 1px solid #74d4eb;
+  height: ($size);
+  background-color: #29bde0;
+  color:$color ;
+  font-size:($font *1.2) ;
+  a{
+    height: 20px;
+    cursor:pointer;
+  }
+  img{
+    margin: 0 ($size / 2);
+  }
+}
+main{
+  min-height: 100vh;
+  margin: ($size *1.5)  ($size/4 ) 0  ($size/4 );
+  border-left: 1px solid #c9c9c9;
+  border-right:1px solid #c9c9c9 ;
+  .day{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: ($size *1.5);
+    margin: ($size *0.5) 0;
+    background-color:$color ;
+    border-bottom: 1px solid #c9c9c9;
+    border-top:1px solid #c9c9c9 ;
+    cursor:pointer;
+    span{
+      color:#24a7c6 ;
+      font-size:($font *1.2) ;
+    }
+    img{
+      margin: 0 20px;
+    }
+    .box-day{
+     width:($size *1.5) ;
+    }
+  }
+}
+.father-box{
+  border-bottom: 1px solid #c9c9c9;
+  margin-bottom: $size;
+}
+.a-day{
+  display: inline-block;
+  width: 20%;
+  padding-left:($size *0.5) ;
+  .night-day{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: ($size *1);
+    height: ($size *1);
+    border: 1px solid #d6d6d6;
+    border-radius:50%;
+  }
+  .strip{
+    width: 2px;
+    height: ($size *1.5);
+    background-color: #d6d6d6;
+    margin-left: ($size *0.5);
+  }
+  .strip1{
+    width: 2px;
+    height: ($size *4);
+    background-color: #d6d6d6;
+    margin-left: ($size *0.5);
+  }
+}
+.flow{
+  float: right;
+  margin-right: ($size *0.5);
+  width: 65%;
+  .flow-box{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  p{
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer;
+  }
+  .triangle1{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer;
+  }
+  .triangle2{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer;
+  }
+  .triangle3{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #24a7c6;
+    cursor: pointer;
+  }
+  .killing{
+    text-align: center;
+    width:100%;
+    line-height:($size *1) ;
+    color:$color ;
+    background-color:#24a7c6 ;
+  }
+  .killing1{
+    text-align: center;
+    width:100%;
+    line-height:($size *1) ;
+    color:$color ;
+    background-color:#24a7c6 ;
+  }
+  .killing2{
+    text-align: center;
+    width:100%;
+    line-height:($size *1) ;
+    color:$color ;
+    background-color:#24a7c6 ;
+  }
+  .killing3{
+    text-align: center;
+    width:100%;
+    line-height:($size *1) ;
+    color:$color ;
+    background-color:#24a7c6 ;
+  }
+  p{
+  }
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width:($size * 19);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+  height: ($size*1.5);
+  background-color:rgba(48,189,224,.5);
+  color:$color ;
+  font-size:($font *1.2) ;
+  #end{
+    text-align: center;
+    line-height: $size;
+    width: 45%;
+    background-color: #fab344;
+    cursor: pointer;
+  }
+  #journal{
+    text-align: center;
+    line-height: $size;
+    width: 45%;
+    background-color: #fab344;
+    cursor: pointer;
+  }
+}
