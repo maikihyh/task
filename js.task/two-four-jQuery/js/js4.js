@@ -17,25 +17,23 @@ function often() {
 function fun() {
     let a = 0;
     for (let i = 0; i < arr.length ; i++) {
-        let div = document.createElement('div');//添加一个div
-        div.setAttribute("class", "box");//给div加上class
-        div.innerHTML=(`<div class="box-time">
+        let div =(`<div class="box"><div class="box-time">
 <div class="box-son" > ${arr[i]}</div>
         <div class="bottom-number">${i + 1}号
       </div></div>
-      <div class="img"></div>`);//添加里面的div
-        document.getElementById("all-box").appendChild(div);//获取外面的id
+      <div class="img"></div></div>`);//添加里面的div
+        $("#all-box").append(div);//获取外面的id
         a++;
     }
     change();
  color();
-    let box = document.getElementsByClassName("box-son");
     for (let q=0; q<arr1.length;q++) {
         if(arr1[q]==="死亡"){
-            box[q].style.backgroundColor = "#8c8c8c";
-            box[q].onclick = "";
-            box[q].classList.add("die");
-            console.log(box[q].innerHTML);
+            $(".box-son").eq(q).css("backgroundColor","#8c8c8c").off("click").addClass("die");
+           var x= document.getElementsByClassName("box-son");
+               x[q].onclick=""
+        }else{
+
         }
     }
 }
@@ -48,7 +46,7 @@ var img = document.getElementsByClassName("img");
 for (let n = 0; n < box1.length; n++) {
     box1[n].onclick = function (){
         for(i=0;i<box1.length;i++){
-            if (arr1[i].indexOf("死亡") !=-1 ) {
+            if (arr1[i].indexOf("死亡") !==-1 ) {
 
             }else{
                 box1[i].style="background-color:#f5c97b";
@@ -69,11 +67,11 @@ for (let n = 0; n < box1.length; n++) {
 var choice = localStorage.getItem("state");//获取存值然后判断使用哪种方法。
 function change() {
     if (choice==="one") {
-        document.getElementById("button1").innerHTML="确定";
-        document.getElementById("header").innerHTML="杀手杀人";
+        $("#button1").text("确定");
+        $("#header").text("杀手杀人");
     }else if (choice==="two") {
-        document.getElementById("button1").innerHTML="投票";
-        document.getElementById("header").innerHTML="全民投票";
+        $("#button1").text("投票");
+        $("#header").text("全民投票");
     }
 
 };//判断是杀人页面还是投票。
@@ -141,30 +139,8 @@ function the() {
     }//投票页面杀手可以点击
 }//使用全局变量的值，3种状态的情况。
 
-// function die() {
-// //     var die=arr1;
-// //     console.log(die);
-// //     return die;
-// // }
-// //
-// // function run() {
-// //     console.log(arr1)
-// //     function cal() {
-// //         let a = die().reduce((o, k) => {
-// //             k in o ? o[k]++ : (o[k] = 1);
-// //             return o;
-// //         },{});
-// //         return a ;
-// //     };
-// //     let killNum = cal()[`杀手`];
-// //     let waterNum = cal()[`水民`];
-// //
-// //     if( (killNum==waterNum) || (killNum==0)){
-// //        alert(12)
-// //     }else{
-//         window.location.href = "js3.1.html";
-// //     }
-// // }
+
+
 var q=0;//杀手数量
 var o=0;//平民数量
 function run() {

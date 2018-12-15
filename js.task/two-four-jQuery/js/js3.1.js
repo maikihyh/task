@@ -8,45 +8,27 @@ else
 {
 }
 }
-var huo =document.getElementsByClassName("killing");
-var huo1 =document.getElementsByClassName("killing1");
-var huo2 =document.getElementsByClassName("killing2");
-var huo3 =document.getElementsByClassName("killing3");
-var ya =document.getElementsByClassName("triangle");
-var ya1 =document.getElementsByClassName("triangle1");
-var ya2 =document.getElementsByClassName("triangle2");
-var ya3 =document.getElementsByClassName("triangle3");
 function disp() {
     if (x===1){
     } else{
         for (let i = 0; i <x-1 ; i++) {
             console.log(i);
-            huo[i].style.backgroundColor = "#83b09a";
-            huo[i].onclick=null;
-            huo1[i].style.backgroundColor = "#83b09a";
-            huo1[i].onclick=null;
-            huo2[i].style.backgroundColor = "#83b09a";
-            huo2[i].onclick=null;
-            huo3[i].style.backgroundColor = "#83b09a";
-            huo3[i].onclick=null;
-            ya[i].style= "border-right:10px solid  #83b09a";
-            ya[i].onclick=null;
-            ya1[i].style= "border-right:10px solid  #83b09a";
-            ya1[i].onclick=null;
-            ya2[i].style= "border-right:10px solid  #83b09a";
-            ya2[i].onclick=null;
-            ya3[i].style= "border-right:10px solid  #83b09a";
-            ya3[i].onclick=null;
+            $(".killing").eq(i).css("backgroundColor","#83b09a").off("click");
+            $(".killing1").eq(i).css("backgroundColor","#83b09a").off("click");
+            $(".killing2").eq(i).css("backgroundColor","#83b09a").off("click");
+            $(".killing3").eq(i).css("backgroundColor","#83b09a").off("click");
+            $(".triangle").eq(i).css("border-right","10px solid  #83b09a").off("click");
+            $(".triangle1").eq(i).css("border-right","10px solid  #83b09a").off("click");
+            $(".triangle2").eq(i).css("border-right","10px solid  #83b09a").off("click");
+            $(".triangle3").eq(i).css("border-right","10px solid  #83b09a").off("click");
         }
     }
-
 }
-
 window.onload = function() {
     fun();
     none();
-    please();
     endgame();
+    please();
     var fsm = new StateMachine({
         init: 'raday',
         transitions: [
@@ -57,73 +39,68 @@ window.onload = function() {
         ],
         methods: {
             onOne: function () {
-                for (let i=0; i<huo.length; i++){
-                    huo[i].style.backgroundColor = "#83b09a";
-                    ya[i].style= "border-right:10px solid  #83b09a";
-                    localStorage.setItem("state","one");
-                }
+                $(".killing").each(function () {
+                    $(this).css("backgroundColor", "#83b09a");
+                    $(this).prev().css("border-right", "10px solid  #83b09a");
+                    localStorage.setItem("state", "one");
+                })
             },
             onTwo: function () {
-                for (let i=0; i<huo1.length; i++){
-                    huo1[i].style.backgroundColor = "#83b09a";
-                    ya1[i].style= "border-right:10px solid  #83b09a";
-                }
+                $(".killing1").each(function () {
+                    $(this).css("backgroundColor", "#83b09a");
+                    $(this).prev().css("border-right", "10px solid  #83b09a");
+                })
             },
             onThree: function () {
-                for (let i=0; i<huo2.length; i++){
-                    huo2[i].style.backgroundColor = "#83b09a";
-                    ya2[i].style= "border-right:10px solid  #83b09a";
-                    localStorage.setItem("state","two");
-                }
+                $(".killing2").each(function () {
+                    $(this).css("backgroundColor", "#83b09a");
+                    $(this).prev().css("border-right", "10px solid  #83b09a");
+                    localStorage.setItem("state", "two");
+                })
 
             },
             onFour: function () {
-                for (let i=0; i<huo3.length; i++){
-                    huo3[i].style.backgroundColor = "#83b09a";
-                    ya3[i].style= "border-right:10px solid  #83b09a";
-                }
+                $(".killing3").each(function () {
+                    $(this).css("backgroundColor", "#83b09a");
+                    $(this).prev().css("border-right", "10px solid  #83b09a");
+                })
             },
         }
-    });//点击渲染颜色、
+});//点击渲染颜色、
     console.log(fsm);
-    var a= document.getElementsByClassName("killing");
-    console.log(a);
-    for (let i=0; i<a.length; i++){
-        a[i] .onclick= function(){
+    $(".killing").each(function(){
+        $(this).click(function(){
             if(fsm.state==="raday"){
                 fsm.one();
                 window.location.href="js4.html";
             } else{
                 alert("请按照顺序操作！")
             }
-        };
-    }
+    })
 
-    var s= document.getElementsByClassName("killing1");
-    for (let i=0; i<s.length; i++) {
-        s[i].onclick = function () {
+    });
+    $(".killing1").each(function(){
+        $(this).click(function(){
             if (fsm.state === "one") {
                 fsm.two();
                 alert("亡灵发表遗言")
             } else {
                 alert("请按照顺序操作！")
             }
-        };
-    }
-    var d= document.getElementsByClassName("killing2");
-    for (let i=0; i<d.length; i++) {
-        d[i].onclick = function () {
+        })
+    });
+    $(".killing2").each(function(){
+        $(this).click(function(){
             if (fsm.state === "two") {
                 fsm.three();
                 alert("玩家依次发言")
             } else {
                 alert("请按照顺序操作！")
             }
-        };
-    }
-    var f= document.getElementsByClassName("killing3");
-    for (let i=0; i<f.length; i++) {
-        f[i].onclick = function () {
+        })
+    });
+    $(".killing3").each(function(){
+        $(this).click(function(){
             if (fsm.state === "three") {
                 fsm.four();
                 oneday();
@@ -131,8 +108,8 @@ window.onload = function() {
             } else {
                 alert("请按照顺序操作！");
             }
-        };
-    }
+        })
+    });
     var state = localStorage.getItem("state");
     state1=function() {
         if(state==="one"){
@@ -146,48 +123,39 @@ window.onload = function() {
            //      fsm.four();
             }
 
-        }()
+        }();
     disp();
 };//有限状态机
  function  none() {
-var q =document.getElementsByClassName("day");
-console.log(q);
-    for (i = 0; i < q.length; i++) {
-        q[i].onclick = function () {
-            if(this.nextElementSibling.style.display==="none"){
-                this.nextElementSibling.style .display= "block";
-        }
-        else {
-                this.nextElementSibling.style .display= "none";
-            }
-        }//点击改变状态隐藏显示
-    }
+     $(".day").each(function(){
+         $(this).click(function(){
+             $(this).next().toggle();
+        })//点击改变状态隐藏显示
+    });
 }
 
 var d=JSON.parse (localStorage.getItem("number"));
  console.log(d);
- var kills= document.getElementsByClassName("kills");
- var death =document.getElementsByClassName("death");
  function please() {
      for (let i=0; i<x; i++) {
          switch (true) {
              case d===undefined:
                  break;
              case d[i].day ===undefined:
-                 kills[i].innerHTML="";
+                 $(".kills").eq(i).text("");
                  break;
              case d[i].day !==undefined:
-                 kills[i].innerHTML=`第${i+1}天`+d[i].day;
+                 $(".kills").eq(i).text(`第${i+1}天`+d[i].day);
                  break;
          }//杀手身份位置
          switch (true) {
              case d===undefined:
                  break;
              case d[i].night ===undefined:
-                 death[i].innerHTML="";
+                 $(".death").eq(i).text("");
                  break;
              case d[i].night !==undefined:
-                 death[i].innerHTML=`第${i+1}天`+d[i].night;
+                 $(".death").eq(i).text(`第${i+1}天`+d[i].night);
                  break;
          }//平民身份位置
      }//判断如果有内容就输出
@@ -198,8 +166,7 @@ function oneday() {
 }//天数保存，第几天然后生成。
 function fun() {
     for (let i = 0; i <x ; i++) {//for循环增加天数
-        let div = document.createElement('div');//添加一个div
-        div.innerHTML = (`  <div class="day">
+       let div = (`  <div class="day">
     <div class="box-day">
     </div>
 
@@ -243,19 +210,18 @@ function fun() {
         <p class="death"></p>
     </div>
 </div>`);//添加里面的div
-        document.getElementById("day-number").appendChild(div);//获取外面的id
+        $("#day-number").append(div);//获取外面的id
     }
 }//游戏进行生成天数。
 function endgame() {
-    document.getElementById("end").onclick = function (){
-        if (confirm("要结束游戏吗"))
-        {
-            window.location.href="js2.1.html";
-        }
-        else
-        {
-        }
-        document.getElementById("journal").onclick = function (){
+     $("#end").click(function() {
+         if (confirm("要结束游戏吗")) {
+             window.location.href = "js2.1.html";
+         }
+         else {
+         }
+     });
+         $("#journal").click (function (){
             if (confirm("要查看法官日志吗"))
             {
                 window.location.href="js3.html";
@@ -263,6 +229,5 @@ function endgame() {
             else
             {
             }
-    }
+        });
 }
- }

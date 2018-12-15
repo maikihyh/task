@@ -7,30 +7,23 @@ var arr1 = infoStr1.split(",");
 //读取死亡数组
 var q=0;//杀手数量
 var o=0;//平民数量
-var j=0;//死亡数量
-var swan;
-window.onload = function(){
+window.onloa
+d = function(){
+    shngc();
+    panduan();
+    btnn();
     for (let a = 0; a < arr1.length; a++) {
         if (arr1[a] === "杀手") {
             q++;
         } else if (arr1[a] === "水民") {
             o++;
         }
-            else if (arr1[a] === "死亡") {
-                j++;
-            }
-        }
-        swan=Math.ceil(j/2);
-    shngc();
-    panduan();
-    btnn();
-    //for循环找到杀手平民数量、
+    }//for循环找到杀手平民数量、
     document.getElementById("kill").innerHTML=q;//输出杀手数量
     document.getElementById("civlian").innerHTML=o;//输出平民数量
 };
 function shngc() {
-    console.log(swan);
-    for (let i = 0; i < swan; i++) {
+    for (let i = 0; i < v; i++) {
         let div = document.createElement('div');//添加一个div
         div.setAttribute("class", "box");//给div加上class
         div.innerHTML = (` <div class="status">
@@ -39,7 +32,9 @@ function shngc() {
     </p>
         </div>
     <div class="day">
+    
     </div>
+
     <div class="night">
      
     </div>`);//添加里面的div
@@ -49,7 +44,7 @@ function shngc() {
 var day= document.getElementsByClassName("day");
 var night =document.getElementsByClassName("night");
 function panduan() {
-    for (let i=0; i<swan; i++) {
+    for (let i=0; i<v; i++) {
         switch (true) {
             case number===undefined:
                 break;

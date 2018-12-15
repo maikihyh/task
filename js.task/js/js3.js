@@ -19,7 +19,7 @@ function fun() {
 var number=[];
 function the() {
     localStorage.setItem("number", number);
-   window.location.href="js3.1.html";
+    window.location.href="js3.1.html";
 
 }//跳转页面
 

@@ -41,7 +41,7 @@ header{
     margin: 1% 2.3% 5% 2.3%;
     cursor:pointer;
     @media #{$type} and ($proto: $value) {
-      width: 28%;
+      width: 27%;
       margin: 1% 2.6% 5% 2.6%;
     }
     .img{

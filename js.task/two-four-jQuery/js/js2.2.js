@@ -20,24 +20,24 @@ function check() {
     console.log(checkNum);
 }
 function reveal() {
-    document.getElementById('num').innerHTML = n+2;
-    document.getElementById('click').innerHTML = "查看" + (n+2) + "号身份";
-    document.getElementById("king").style.display="block";
-    document.getElementById("civilian").style.display="none";
-    document.getElementById("identity").style.display="none";
+    $("#civilian").text(n+2);
+    $("#click").text("查看" + (n+2) + "号身份");
+    $("#king").css("display","block");
+    $("#civilian").css("display","none");
+    $("#identity").css("display","none");
     n ++;
     console.log(arr.length);
 }
 function hide(){
     if (n+1 === arr.length){
-        document.getElementById('click').innerHTML = "查看法官日志";
+        $("#click").text("查看法官日志");
     }else {
-        document.getElementById('click').innerHTML = "隐藏并传递给" + (n+2) + "号";
+        $("#click").text("隐藏并传递给" + (n+2) + "号");
     }
-    document.getElementById("king").style.display = "none";
-    document.getElementById("identity").style.display = "block";
-    document.getElementById("civilian").style.display = "block";
-    document.getElementById("identity").innerHTML = "身份: " + arr[n];
+    $("#king").css("display","none");
+    $("#civilian").css("display","block");
+    $("#identity").css("display","block");
+    $("#identity").text( "身份: " + arr[n]);
 }
 function number() {
     if (confirm("要离开页面，重新分配人数吗"))

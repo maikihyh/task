@@ -6,14 +6,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="../../../jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="../css/js2.1.css">
     <script src="../js/js2.1.js"></script>
-
 
 </head>
 <body>
 <header>
-    <a onclick="add()"><img src="../img/return.png" height="25" width="15"/></a>
+    <a id="img"><img src="../img/return.png" height="25" width="15"/></a>
     <div>
         参数设置
   </div>
@@ -34,20 +35,20 @@
     </div>
 
     <div class="input-box">
-    <input id="button1" class="button" type="text" maxlength='0'  onblur="smch()"  onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')"  placeholder="输入正确人数"  value="" >
-    <input id="button2" class="button" type="text" maxlength='0'  onblur="ssch()" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')" placeholder="并且开始游戏"  value="" >
+    <input id="button1" class="button" type="text" maxlength='0'   onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')"  placeholder="输入正确人数"  value="" >
+    <input id="button2" class="button" type="text" maxlength='0'   onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')" placeholder="并且开始游戏"  value="" >
     </div>
     <div class="setting-player">
        <div>
-           玩家人数 &nbsp;&nbsp; <input id="input1" value="4"   onblur="start()" type="text" oninput = "value=value.replace(/[^\d]/g,'')"  maxlength='2' placeholder="">&nbsp;&nbsp;人
+           玩家人数 &nbsp;&nbsp; <input id="input1" value="4"  type="text" oninput = "value=value.replace(/[^\d]/g,'')"  maxlength='2' placeholder="">&nbsp;&nbsp;人
            <span>玩家人数为4-18人</span>
        </div>
 
 
         <div class="control-input">
-            <input id="subbtn" onclick="subnum()" type="button" value="—">
-        <input id="range" onchange="change()" type="range" min="4" max="18" step="1" value="4">
-            <input id="addbtn" onclick="addnum()" type="button" value="+">
+            <input id="subbtn"  type="button" value="—">
+        <input id="range" type="range" min="4" max="18" step="1" value="4">
+            <input id="addbtn"  type="button" value="+">
         </div>
     </div>
 
@@ -55,7 +56,7 @@
    </main>
 
 <footer  >
-    <button class="button-box" onclick="add2()">去发牌</button>
+    <button class="button-box" id="deal">去发牌</button>
 </footer>
 
 

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../../../angular-1.7.5/angular.js"></script>
+    <script src="../../../angular-1.7.5/angular-route.js"></script>
+
+</head>
+<body>
+<h1 style="text-align: center;color: #0000FF">你的私人空间</h1>
+<h3 style="color:red ;">请确保您18岁!</h3>
+<ul>
+<li><a href="#!one"> 第一页 </a></li>
+    <li><a href="#!two"> 第二页 </a></li>
+    <li><a href="#!three"> 第三页 </a></li>
+    <li><a href="#!four"> 第四页 </a></li>
+    <li><a href="#!five"> 第五页 </a></li>
+</ul>
+<div style="text-align: center;" ng-view></div>
+
+<script type="text/javascript">
+    angular.module('myApp',['ngRoute'])
+        .config(['$routeProvider',function ($routeProvider) {
+            $routeProvider.when('/one',{
+                template : '<img style="height: 470px" src="img/30fd6c55c6.jpg"/>'
+            })
+                .when('/two',{
+                    template : ' <img style="height: 470px" src="img/f55586c5bf.jpg"/>',
+
+                })
+                .when('/three',{
+                    template: ' <img style="height: 470px" src="img/df03387616.jpg"/>',
+                })
+                .when('/four',{
+                    templateUrl : 'index.html',
+                    // controller : 'fourCtrl'
+                })
+                .when('/five',{
+                    templateUrl : 'beauty.html',
+                    // controller : 'fiveCtrl'
+                })
+                .otherwise({
+                    redirectTo : '/one'
+                })
+        }])
+   </script>
+
+
+</body>
+</html>

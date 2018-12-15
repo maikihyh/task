@@ -1,3 +1,5 @@
-function   add(){
-    window.location.href="js2.1.html";
-}
+$(document).ready(function() {
+    $("#edition").click(function () {
+        window.location.href = "js2.1.html";
+    });
+});

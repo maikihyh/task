@@ -56,6 +56,15 @@ body {
     margin: 10px 52px;
     background-color: #69d1e9;
     cursor: pointer; }
+    .grad-ghost .simplify button {
+      width: 100%;
+      outline: none;
+      border: 1px solid transparent;
+      color: #fff;
+      cursor: pointer;
+      height: 60px;
+      background-color: #69d1e9;
+      font-size: 1.2rem; }
     .grad-ghost .simplify a {
       text-decoration: none;
       color: #fff;
