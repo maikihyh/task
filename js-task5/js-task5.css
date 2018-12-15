@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding-top: 20vw;
+  background: url("./img/f3e9db6b68 (1).jpg"); }
+
+.backstage {
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px 30px 10px 30px;
+  background-color: #bbc1cc; }
+  .backstage .login {
+    text-align: center;
+    color: #199ce2;
+    font-size: 1.5rem; }
+  .backstage .button {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding-left: 10px;
+    border-left: 1px solid #dedede; }
+
+#nthe {
+  margin: 0;
+  height: 25px; }
+
+.box {
+  width: 100%;
+  height: 40px;
+  margin: 15px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #199ce2;
+  font-size: 1rem;
+  cursor: pointer; }
+
+.pif {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  height: 40px;
+  margin: 10px 0;
+  font-size: 1rem; }
+
+/*# sourceMappingURL=js-task5.css.map */
