@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+</head>
+<body>
+<div ng-app="myApp" ng-controller="siteCtrl">
+<div class="backstage">
+    <p class="login">
+        后台登录
+    </p>
+    <form name="myForm" >
+<div class="pif">
+    <img src="../img/个人头像_o.png" height="32" width="32"/>
+    <input type="text" class="button" id="number"  placeholder="账号"  ng-model="text1" name="myField" required minlength="5" />
+</div>
+        <div  class="vft" ng-messages="myForm.myField.$error"  ng-if="myForm.myField.$touched">
+            <div ng-message="required">必须填用户名</div>
+            <div ng-message="minlength">用户名要在五位之上</div>
+        </div>
+    </form>
+    <form name="myForm1" >
+    <div class="pif"><img src="../img/锁定.png" height="32" width="32"/>
+        <input ng-model="text2" type="password" id="password" class="button" placeholder
+                 ="密码" name="myField1" required minlength="5" />
+    </div>
+        <div  class="vft" ng-messages="myForm1.myField1.$error" ng-if="myForm1.myField1.$touched">
+            <div ng-message="required">必须填密码</div>
+            <div ng-message="minlength">密码要在五位之上</div>
+        </div>
+    </form>
+<button class="box" id="box-" ng-click="login()">登录</button>
+
+
+</div>
+
+</div>
+
+
+</body>
+<script src="../angular-js/angular.js"></script>
+<script src="../../angular-1.7.5/angular-messages.js"></script>
+<script src="../jquery-3.3.1.js"></script>
+<link rel="stylesheet" href="../css/js-task6.css">
+<script src="../js/js-task6.js"></script>
+</html>
