@@ -2,12 +2,19 @@ $color1:#fff;
 $Color:#199ce2;
 body{
   margin: 0 ;
-  padding-top: 20vw;
-  background: url("../img/f3e9db6b68 (1).jpg")
 }
-
+.wrapper{
+  overflow: hidden;
+  min-height: 100vh;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("../img/beauty.jpg");
+}
 .backstage{
-  margin: 0 auto;
   width: 400px;
   padding: 10px 30px 10px 30px;
   background-color: #bbc1cc;
@@ -51,4 +58,10 @@ body{
 }
 .vft{
   color: red;
+}
+.panel-body{
+padding: 0;
+}
+.panel-bodyy{
+  padding:15px;
 }
